@@ -5,9 +5,11 @@ const lowerThree = inputThree.toLowerCase()
 
     if (lowerThree.toLowerCase() === "yes"){
         alert(`${inputOne} is a(n) ${inputTwo} and loves it!` )
+        console.log(`${inputOne} is a(n) ${inputTwo} and loves it!` )
     }
     else if (lowerThree.toLowerCase() === "no"){
         alert(`${inputOne} is a(n) ${inputTwo} and hates it!` )
+        console.log(`${inputOne} is a(n) ${inputTwo} and hates it!` )
     }
 
 
@@ -15,29 +17,39 @@ let colors = ["red", "green", "blue"]
 let choice = prompt("Pick a color (red, green, or blue)!")
     if (choice  === "red"){
     alert(`${inputOne} chose ${colors[0]}!` );
+    console.log(`${inputOne} chose ${colors[0]}!` );
 }
     else if (choice  === "green"){
     alert(`${inputOne} chose ${colors[1]}!` );
+    console.log(`${inputOne} chose ${colors[1]}!` );
 }
     else if (choice  === "blue"){
     alert(`${inputOne} chose ${colors[2]}!` );
+    console.log(`${inputOne} chose ${colors[2]}!` );
 }
 
 number = prompt("Input a number:")
     if (number < 5){
         alert("Tiny")
+        console.log("Tiny")
     }
     else if (number < 10){
         alert("Small")
+        console.log("Small")
     }
     else if (number < 15){
         alert("Medium")
+        console.log("Medium")
     }
+    
     else if (number <20){
         alert("Large")
+        console.log("Large")
+    
     }
     else if (number == 20){
         alert("Huge")
+        console.log("Huge")
     }
 
 let name = prompt("What is your name?")
@@ -46,3 +58,4 @@ let hours = prompt("How many hours do you work a week?")
 const answer = payRate * hours
 const roundedAnswer = Math.ceil(answer)
 alert(`${name} works ${hours} a week and makes $${roundedAnswer}`)
+console.log(`${name} works ${hours} a week and makes $${roundedAnswer}`)
